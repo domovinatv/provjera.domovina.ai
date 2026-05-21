@@ -119,7 +119,7 @@ Cloudflare Pages se preporuča za produkciju jer:
 2. Build postavke kao iznad
 3. Environment variables kao iznad
 4. Save and Deploy — prvi build kreira projekt s privremenim URL-om (`adhd-provjera.pages.dev`)
-5. Custom domain: **Custom domains** → **Set up a custom domain** → unesi željenu poddomenu (npr. `provjera.domovina.ai`). Cloudflare automatski kreira CNAME u DNS-u ako je `domovina.ai` već u istom Cloudflare accountu.
+5. Custom domain: **Custom domains** → **Set up a custom domain** → unesi željenu poddomenu `provjera.domovina.ai`. Cloudflare automatski kreira CNAME u DNS-u ako je `domovina.ai` već u istom Cloudflare accountu.
 6. Sljedeći push u `main` okida automatski build na CF Pages (paralelno s GitHub Pages workflow-om).
 
 **Alternativa — manual CLI deploy** (bez GitHub integracije):
