@@ -9,11 +9,17 @@ import { Welcome } from './components/Welcome';
 import { Question } from './components/Question';
 import { Result } from './components/Result';
 import { BrandHeader, DomovinaFooter, TricolorStrip } from './components/Brand';
+import { UpdatePrompt } from './components/UpdatePrompt';
+import type { UpdateController } from './lib/sw-update';
 
 type Korak = 'pocetak' | 'upitnik' | 'rezultat';
 export type Verzija = 'kratko' | 'puno';
 
-export default function App() {
+interface AppProps {
+  swController: UpdateController;
+}
+
+export default function App({ swController }: AppProps) {
   const [korak, setKorak] = useState<Korak>('pocetak');
   const [verzija, setVerzija] = useState<Verzija>('kratko');
   const [trenutni, setTrenutni] = useState(0);
@@ -61,6 +67,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <UpdatePrompt controller={swController} />
       <TricolorStrip position="top" />
 
       <main className="mx-auto w-full max-w-2xl px-4 py-2 pb-10 flex-1">

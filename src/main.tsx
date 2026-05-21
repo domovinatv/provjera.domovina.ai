@@ -1,15 +1,15 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { registerSW } from 'virtual:pwa-register';
 import App from './App';
+import { postaviSwUpdate } from './lib/sw-update';
 import './index.css';
 
-// Service worker se auto-update-a po novom deploy-u; korisnik dobije
-// najnoviju verziju pri sljedećem otvaranju app-e.
-registerSW({ immediate: true });
+// Service worker registracija + update detekcija. Vidi src/lib/sw-update.ts
+// za detalje pattern-a (polling, onNeedRefresh callback, anti-Safari mjere).
+const swController = postaviSwUpdate();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <App swController={swController} />
   </StrictMode>,
 );
