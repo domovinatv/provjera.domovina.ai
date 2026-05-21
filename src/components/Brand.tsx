@@ -31,11 +31,24 @@ export function Wordmark() {
   );
 }
 
+export function BrandLogo({ size = 56 }: { size?: number }) {
+  return (
+    <img
+      src={`${import.meta.env.BASE_URL}favicon.svg`}
+      width={size}
+      height={size}
+      alt="ADHD.provjera logo"
+      className="block"
+    />
+  );
+}
+
 export function BrandHeader() {
   return (
-    <header className="text-center pt-6 pb-7">
+    <header className="flex flex-col items-center pt-6 pb-7 gap-3">
+      <BrandLogo size={56} />
       <Wordmark />
-      <p className="mt-2 text-sm text-domovina-muted">
+      <p className="text-sm text-domovina-muted -mt-1">
         Offline alat za samoprocjenu prema ASRS v1.1
       </p>
     </header>
