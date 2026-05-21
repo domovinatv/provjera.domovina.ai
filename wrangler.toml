@@ -2,13 +2,13 @@
 # Vidi: https://developers.cloudflare.com/pages/functions/wrangler-configuration/
 #
 # Koristi se za:
-#   wrangler pages deploy dist --project-name adhd-provjera
+#   wrangler pages deploy dist --project-name provjera-domovina-ai
 #
 # Ako se Cloudflare Pages spaja direktno na GitHub repo (preporuka), ovaj
 # file nije strogo potreban — Pages dashboard ima sve postavke. Ovdje je
 # dokumentiran kao referenca i podrška manual deploy-u.
 
-name = "adhd-provjera"
+name = "provjera-domovina-ai"
 compatibility_date = "2026-05-21"
 pages_build_output_dir = "dist"
 
