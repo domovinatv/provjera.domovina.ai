@@ -48,6 +48,11 @@
 
       <h2 class="pitanje-tekst">{{ pitanje().tekst }}</h2>
 
+      <aside class="primjer" aria-label="Primjer iz svakodnevnog života">
+        <span class="primjer-oznaka">Primjer</span>
+        {{ pitanje().primjer }}
+      </aside>
+
       <div class="odgovori" role="radiogroup" [attr.aria-label]="pitanje().tekst">
         @for (o of opcije; track o.vrijednost) {
           <button

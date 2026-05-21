@@ -156,6 +156,33 @@
   line-height: 1.45;
 }
 
+.primjer {
+  background: #f0f4fc;
+  border-left: 3px solid #8aa0d6;
+  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.92rem;
+  color: #3c4868;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.primjer-oznaka {
+  display: inline-block;
+  background: #8aa0d6;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-right: 0.5rem;
+  vertical-align: 0.05em;
+}
+
 .odgovori {
   display: grid;
   gap: 0.5rem;

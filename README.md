@@ -66,6 +66,11 @@ Aplikacija se nakon prvog učitavanja može koristiti **u potpunosti offline**.
 Hrvatski prijevodi pitanja u ovoj aplikaciji su radni i nisu službeno validirana
 hrvatska inačica upitnika.
 
+**Napomena o primjerima:** uz svako pitanje aplikacija prikazuje kratki ilustrativni
+primjer iz svakodnevnog života radi lakšeg razumijevanja. Primjeri **nisu dio službenog
+ASRS upitnika**, vizualno su odvojeni od pitanja i napisani neutralno (ne sugeriraju
+određeni odgovor). Izvorni tekst svakog pitanja preuzet je iz ASRS v1.1.
+
 ## Gdje se prijaviti na službeno testiranje (Hrvatska)
 
 - **Obiteljski liječnik** — prvi kontakt; izdaje uputnicu prema specijalistu.
